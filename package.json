@@ -38,11 +38,7 @@
         "validation": "0.0.1",
         "yup": "^0.32.9"
     },
-    "devServer": {
-        "compress": true,
-        "disableHostCheck": true
-    
-     },
+
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
