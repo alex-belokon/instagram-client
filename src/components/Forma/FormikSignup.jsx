@@ -4,30 +4,40 @@ import Icon from "../Icon/Icon";
 import "./style.scss";
 import { Link } from "react-router-dom";
 import LogoUser from "../Header/07_yulia_akimenkooo.jpg";
-// import { useDispatch, useSelector } from 'react-redux';
-// import { udateComent, updateCardsStore } from '../../store/actions';
-// import { getComent } from '../../store/selectors';
-// import { useEffect } from 'react';
+//import axios from "axios";
 
 const FormikSignup = (props) => {
- 
-  const [count, setCount] = useState("");
-
-  
+  //const [autorUser, setAutorUser] = useState("");
+  const [comentUser, setComentUser] = useState("");
+  //const [urlUser, setUrlUser] = useState("");
 
   const handleSubmitForm = (values) => {
     const { coment } = values;
-    setCount(coment);
+    setComentUser(coment);
 
-    const post = {
-      autor: coment,
-      message: coment,
-      urlUser: null,
-    };
-    console.log(post);
+    //   const data = {
+    //     autor: autorUser,
+    //     message: comentUser,
+    //     urlUser: urlUser,
+    //   };
+
+    //   axios
+    //     .post('http://localhost:8082/api/books', data)
+    //     .then((res) => {
+    //       setAutorUser({
+    //         autor: "autorUser",
+    //         message: "comentUser",
+    //         urlUser: "urlUser",
+    //       });
+    //       console.log(data);
+    //       props.history.push("/");
+    //     })
+    //     .catch((err) => {
+    //       console.log("Error in CreateBook!");
+    //     });
+
+    //   console.log(data);
   };
-  
-
 
   return (
     <div className="container-coment">
@@ -60,7 +70,7 @@ const FormikSignup = (props) => {
       <Link to="/yulia_akimenkooo">
         <img src={LogoUser} className="user-logo" alt="user-logo" />
       </Link>
-      {count}
+      {comentUser}
     </div>
   );
 };

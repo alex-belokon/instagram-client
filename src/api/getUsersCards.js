@@ -2,7 +2,7 @@ import axios from 'axios';
 
 
 const getUsersCards = () => {
-    return axios("http://localhost:5000") 
+    return axios("https://floating-ravine-50377.herokuapp.com/") 
 
 }
 
