@@ -1,0 +1,16 @@
+.NoFriendContainer {
+  display: grid;
+  align-content: flex-start;
+  width: 250px;
+  height: 200px;
+  overflow: hidden;
+  overflow-y: auto;
+  
+}
+.recomended {
+  position: absolute;
+  top: -16px;
+  font-size: 11px;
+  font-weight: 400;
+  color: #424242;
+}
